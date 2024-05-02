@@ -6,11 +6,7 @@
 #define TALLERCOLABORATIVO_BUSQUEDA_H
 
 
-
-class busqueda {
-
-};
-
+int buscarSubcadena(const char *cadena, const char *subcadena, int posicion);
 
 
 #endif //TALLERCOLABORATIVO_BUSQUEDA_H

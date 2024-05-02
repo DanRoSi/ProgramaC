@@ -6,11 +6,7 @@
 #define TALLERCOLABORATIVO_SUBCADENA_H
 
 
-
-class subcadena {
-
-};
-
+char* obtenerSubcadena(const char *cadena, int posicionInicial, int posicionFinal);
 
 
 #endif //TALLERCOLABORATIVO_SUBCADENA_H

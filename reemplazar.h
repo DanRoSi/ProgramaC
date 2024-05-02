@@ -6,11 +6,7 @@
 #define TALLERCOLABORATIVO_REEMPLAZAR_H
 
 
-
-class reemplazar {
-
-};
-
+char* reemplazarCaracter(const char *cadena, char caracterBusqueda, char caracterRemplazo);
 
 
 #endif //TALLERCOLABORATIVO_REEMPLAZAR_H

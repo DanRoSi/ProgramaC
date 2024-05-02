@@ -3,4 +3,7 @@ project(TallerColaborativo)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(TallerColaborativo main.cpp)
+add_executable(TallerColaborativo main.cpp
+        rellenar.cpp
+        subcadena.cpp
+        reemplazar.cpp)

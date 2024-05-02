@@ -6,11 +6,7 @@
 #define TALLERCOLABORATIVO_RELLENAR_H
 
 
-
-class rellenar {
-
-};
-
+char* rellenarCadena(const char *cadena, char caracter, int direccion, int numCaracteres);
 
 
 #endif //TALLERCOLABORATIVO_RELLENAR_H
