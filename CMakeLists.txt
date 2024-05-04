@@ -4,9 +4,6 @@ project(TallerColaborativo)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(TallerColaborativo main.c
-        rellenar.c
-        subcadena.cpp
-        reemplazar.cpp
+        Funciones.c
         Funciones.h
-        Funciones.h
-        Funciones.h)
+        Funciones.c)

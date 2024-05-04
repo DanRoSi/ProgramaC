@@ -82,25 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/Funciones.c">
+			<Option target="TallerColaborativo"/>
+		</Unit>
+		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/Funciones.h">
+			<Option target="TallerColaborativo"/>
+		</Unit>
 		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/main.c">
-			<Option target="TallerColaborativo"/>
-		</Unit>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/reemplazar.cpp">
-			<Option target="TallerColaborativo"/>
-		</Unit>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/reemplazar.h">
-			<Option target="TallerColaborativo"/>
-		</Unit>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/rellenar.c">
-			<Option target="TallerColaborativo"/>
-		</Unit>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/rellenar.h">
-			<Option target="TallerColaborativo"/>
-		</Unit>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/subcadena.cpp">
-			<Option target="TallerColaborativo"/>
-		</Unit>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/subcadena.h">
 			<Option target="TallerColaborativo"/>
 		</Unit>
 		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/CMakeLists.txt">

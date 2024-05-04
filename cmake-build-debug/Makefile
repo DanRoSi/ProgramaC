@@ -128,6 +128,30 @@ TallerColaborativo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/build
 .PHONY : TallerColaborativo/fast
 
+Funciones.obj: Funciones.c.obj
+.PHONY : Funciones.obj
+
+# target to build an object file
+Funciones.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/Funciones.c.obj
+.PHONY : Funciones.c.obj
+
+Funciones.i: Funciones.c.i
+.PHONY : Funciones.i
+
+# target to preprocess a source file
+Funciones.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/Funciones.c.i
+.PHONY : Funciones.c.i
+
+Funciones.s: Funciones.c.s
+.PHONY : Funciones.s
+
+# target to generate assembly for a file
+Funciones.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/Funciones.c.s
+.PHONY : Funciones.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -152,78 +176,6 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/main.c.s
 .PHONY : main.c.s
 
-reemplazar.obj: reemplazar.cpp.obj
-.PHONY : reemplazar.obj
-
-# target to build an object file
-reemplazar.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.obj
-.PHONY : reemplazar.cpp.obj
-
-reemplazar.i: reemplazar.cpp.i
-.PHONY : reemplazar.i
-
-# target to preprocess a source file
-reemplazar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.i
-.PHONY : reemplazar.cpp.i
-
-reemplazar.s: reemplazar.cpp.s
-.PHONY : reemplazar.s
-
-# target to generate assembly for a file
-reemplazar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.s
-.PHONY : reemplazar.cpp.s
-
-rellenar.obj: rellenar.c.obj
-.PHONY : rellenar.obj
-
-# target to build an object file
-rellenar.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.c.obj
-.PHONY : rellenar.c.obj
-
-rellenar.i: rellenar.c.i
-.PHONY : rellenar.i
-
-# target to preprocess a source file
-rellenar.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.c.i
-.PHONY : rellenar.c.i
-
-rellenar.s: rellenar.c.s
-.PHONY : rellenar.s
-
-# target to generate assembly for a file
-rellenar.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.c.s
-.PHONY : rellenar.c.s
-
-subcadena.obj: subcadena.cpp.obj
-.PHONY : subcadena.obj
-
-# target to build an object file
-subcadena.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/subcadena.cpp.obj
-.PHONY : subcadena.cpp.obj
-
-subcadena.i: subcadena.cpp.i
-.PHONY : subcadena.i
-
-# target to preprocess a source file
-subcadena.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/subcadena.cpp.i
-.PHONY : subcadena.cpp.i
-
-subcadena.s: subcadena.cpp.s
-.PHONY : subcadena.s
-
-# target to generate assembly for a file
-subcadena.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/subcadena.cpp.s
-.PHONY : subcadena.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -233,18 +185,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... TallerColaborativo
+	@echo ... Funciones.obj
+	@echo ... Funciones.i
+	@echo ... Funciones.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... reemplazar.obj
-	@echo ... reemplazar.i
-	@echo ... reemplazar.s
-	@echo ... rellenar.obj
-	@echo ... rellenar.i
-	@echo ... rellenar.s
-	@echo ... subcadena.obj
-	@echo ... subcadena.i
-	@echo ... subcadena.s
 .PHONY : help
 
 
