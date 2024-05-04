@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.28"
@@ -15,7 +15,8 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -30,7 +31,8 @@
 					"name" : "TallerColaborativo",
 					"targetIndexes" : 
 					[
-						0
+						0,
+						1
 					]
 				}
 			],
@@ -39,8 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TallerColaborativo::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TallerColaborativo-Debug-133a8ea1fbc99b4c66ff.json",
+					"jsonFile" : "target-TallerColaborativo-Debug-b8428591658af1212cfa.json",
 					"name" : "TallerColaborativo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "main::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-main-Debug-d9adcf7deed360db4e3e.json",
+					"name" : "main",
 					"projectIndex" : 0
 				}
 			]
@@ -49,8 +58,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/cmake-build-debug",
-		"source" : "C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo"
+		"build" : "/home/felipe/Escritorio/ProgramaC/cmake-build-debug",
+		"source" : "/home/felipe/Escritorio/ProgramaC"
 	},
 	"version" : 
 	{
