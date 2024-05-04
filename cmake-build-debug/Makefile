@@ -128,29 +128,29 @@ TallerColaborativo/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/build
 .PHONY : TallerColaborativo/fast
 
-main.obj: main.cpp.obj
+main.obj: main.c.obj
 .PHONY : main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+main.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/main.c.obj
+.PHONY : main.c.obj
 
-main.i: main.cpp.i
+main.i: main.c.i
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/main.c.i
+.PHONY : main.c.i
 
-main.s: main.cpp.s
+main.s: main.c.s
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/main.c.s
+.PHONY : main.c.s
 
 reemplazar.obj: reemplazar.cpp.obj
 .PHONY : reemplazar.obj
@@ -176,29 +176,29 @@ reemplazar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.s
 .PHONY : reemplazar.cpp.s
 
-rellenar.obj: rellenar.cpp.obj
+rellenar.obj: rellenar.c.obj
 .PHONY : rellenar.obj
 
 # target to build an object file
-rellenar.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj
-.PHONY : rellenar.cpp.obj
+rellenar.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.c.obj
+.PHONY : rellenar.c.obj
 
-rellenar.i: rellenar.cpp.i
+rellenar.i: rellenar.c.i
 .PHONY : rellenar.i
 
 # target to preprocess a source file
-rellenar.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.cpp.i
-.PHONY : rellenar.cpp.i
+rellenar.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.c.i
+.PHONY : rellenar.c.i
 
-rellenar.s: rellenar.cpp.s
+rellenar.s: rellenar.c.s
 .PHONY : rellenar.s
 
 # target to generate assembly for a file
-rellenar.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.cpp.s
-.PHONY : rellenar.cpp.s
+rellenar.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TallerColaborativo.dir\build.make CMakeFiles/TallerColaborativo.dir/rellenar.c.s
+.PHONY : rellenar.c.s
 
 subcadena.obj: subcadena.cpp.obj
 .PHONY : subcadena.obj

@@ -68,33 +68,33 @@ include CMakeFiles/TallerColaborativo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/TallerColaborativo.dir/flags.make
 
-CMakeFiles/TallerColaborativo.dir/main.cpp.obj: CMakeFiles/TallerColaborativo.dir/flags.make
-CMakeFiles/TallerColaborativo.dir/main.cpp.obj: C:/Users/danie/Documents/Programacion\ III/Programacion\ III/TallerColaborativo/main.cpp
-CMakeFiles/TallerColaborativo.dir/main.cpp.obj: CMakeFiles/TallerColaborativo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/TallerColaborativo.dir/main.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TallerColaborativo.dir/main.cpp.obj -MF CMakeFiles\TallerColaborativo.dir\main.cpp.obj.d -o CMakeFiles\TallerColaborativo.dir\main.cpp.obj -c "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\main.cpp"
+CMakeFiles/TallerColaborativo.dir/main.c.obj: CMakeFiles/TallerColaborativo.dir/flags.make
+CMakeFiles/TallerColaborativo.dir/main.c.obj: C:/Users/danie/Documents/Programacion\ III/Programacion\ III/TallerColaborativo/main.c
+CMakeFiles/TallerColaborativo.dir/main.c.obj: CMakeFiles/TallerColaborativo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/TallerColaborativo.dir/main.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/TallerColaborativo.dir/main.c.obj -MF CMakeFiles\TallerColaborativo.dir\main.c.obj.d -o CMakeFiles\TallerColaborativo.dir\main.c.obj -c "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\main.c"
 
-CMakeFiles/TallerColaborativo.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TallerColaborativo.dir/main.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\main.cpp" > CMakeFiles\TallerColaborativo.dir\main.cpp.i
+CMakeFiles/TallerColaborativo.dir/main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/TallerColaborativo.dir/main.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\main.c" > CMakeFiles\TallerColaborativo.dir\main.c.i
 
-CMakeFiles/TallerColaborativo.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TallerColaborativo.dir/main.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\main.cpp" -o CMakeFiles\TallerColaborativo.dir\main.cpp.s
+CMakeFiles/TallerColaborativo.dir/main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/TallerColaborativo.dir/main.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\main.c" -o CMakeFiles\TallerColaborativo.dir\main.c.s
 
-CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj: CMakeFiles/TallerColaborativo.dir/flags.make
-CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj: C:/Users/danie/Documents/Programacion\ III/Programacion\ III/TallerColaborativo/rellenar.cpp
-CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj: CMakeFiles/TallerColaborativo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj -MF CMakeFiles\TallerColaborativo.dir\rellenar.cpp.obj.d -o CMakeFiles\TallerColaborativo.dir\rellenar.cpp.obj -c "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\rellenar.cpp"
+CMakeFiles/TallerColaborativo.dir/rellenar.c.obj: CMakeFiles/TallerColaborativo.dir/flags.make
+CMakeFiles/TallerColaborativo.dir/rellenar.c.obj: C:/Users/danie/Documents/Programacion\ III/Programacion\ III/TallerColaborativo/rellenar.c
+CMakeFiles/TallerColaborativo.dir/rellenar.c.obj: CMakeFiles/TallerColaborativo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/TallerColaborativo.dir/rellenar.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/TallerColaborativo.dir/rellenar.c.obj -MF CMakeFiles\TallerColaborativo.dir\rellenar.c.obj.d -o CMakeFiles\TallerColaborativo.dir\rellenar.c.obj -c "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\rellenar.c"
 
-CMakeFiles/TallerColaborativo.dir/rellenar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TallerColaborativo.dir/rellenar.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\rellenar.cpp" > CMakeFiles\TallerColaborativo.dir\rellenar.cpp.i
+CMakeFiles/TallerColaborativo.dir/rellenar.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/TallerColaborativo.dir/rellenar.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\rellenar.c" > CMakeFiles\TallerColaborativo.dir\rellenar.c.i
 
-CMakeFiles/TallerColaborativo.dir/rellenar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TallerColaborativo.dir/rellenar.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\rellenar.cpp" -o CMakeFiles\TallerColaborativo.dir\rellenar.cpp.s
+CMakeFiles/TallerColaborativo.dir/rellenar.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/TallerColaborativo.dir/rellenar.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.1\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\danie\Documents\Programacion III\Programacion III\TallerColaborativo\rellenar.c" -o CMakeFiles\TallerColaborativo.dir\rellenar.c.s
 
 CMakeFiles/TallerColaborativo.dir/subcadena.cpp.obj: CMakeFiles/TallerColaborativo.dir/flags.make
 CMakeFiles/TallerColaborativo.dir/subcadena.cpp.obj: C:/Users/danie/Documents/Programacion\ III/Programacion\ III/TallerColaborativo/subcadena.cpp
@@ -126,16 +126,16 @@ CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.s: cmake_force
 
 # Object files for target TallerColaborativo
 TallerColaborativo_OBJECTS = \
-"CMakeFiles/TallerColaborativo.dir/main.cpp.obj" \
-"CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj" \
+"CMakeFiles/TallerColaborativo.dir/main.c.obj" \
+"CMakeFiles/TallerColaborativo.dir/rellenar.c.obj" \
 "CMakeFiles/TallerColaborativo.dir/subcadena.cpp.obj" \
 "CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.obj"
 
 # External object files for target TallerColaborativo
 TallerColaborativo_EXTERNAL_OBJECTS =
 
-TallerColaborativo.exe: CMakeFiles/TallerColaborativo.dir/main.cpp.obj
-TallerColaborativo.exe: CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj
+TallerColaborativo.exe: CMakeFiles/TallerColaborativo.dir/main.c.obj
+TallerColaborativo.exe: CMakeFiles/TallerColaborativo.dir/rellenar.c.obj
 TallerColaborativo.exe: CMakeFiles/TallerColaborativo.dir/subcadena.cpp.obj
 TallerColaborativo.exe: CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.obj
 TallerColaborativo.exe: CMakeFiles/TallerColaborativo.dir/build.make

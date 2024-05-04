@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/main.cpp">
+		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/main.c">
 			<Option target="TallerColaborativo"/>
 		</Unit>
 		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/reemplazar.cpp">
@@ -91,7 +91,7 @@
 		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/reemplazar.h">
 			<Option target="TallerColaborativo"/>
 		</Unit>
-		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/rellenar.cpp">
+		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/rellenar.c">
 			<Option target="TallerColaborativo"/>
 		</Unit>
 		<Unit filename="C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/rellenar.h">

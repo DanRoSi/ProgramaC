@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TallerColaborativo.dir/main.cpp.obj"
-  "CMakeFiles/TallerColaborativo.dir/main.cpp.obj.d"
+  "CMakeFiles/TallerColaborativo.dir/main.c.obj"
+  "CMakeFiles/TallerColaborativo.dir/main.c.obj.d"
   "CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.obj"
   "CMakeFiles/TallerColaborativo.dir/reemplazar.cpp.obj.d"
-  "CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj"
-  "CMakeFiles/TallerColaborativo.dir/rellenar.cpp.obj.d"
+  "CMakeFiles/TallerColaborativo.dir/rellenar.c.obj"
+  "CMakeFiles/TallerColaborativo.dir/rellenar.c.obj.d"
   "CMakeFiles/TallerColaborativo.dir/subcadena.cpp.obj"
   "CMakeFiles/TallerColaborativo.dir/subcadena.cpp.obj.d"
   "TallerColaborativo.exe"
@@ -14,6 +14,6 @@ file(REMOVE_RECURSE
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/TallerColaborativo.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
