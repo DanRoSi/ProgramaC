@@ -1,3 +1,4 @@
 /home/felipe/Escritorio/ProgramaC/cmake-build-debug/CMakeFiles/TallerColaborativo.dir
+/home/felipe/Escritorio/ProgramaC/cmake-build-debug/CMakeFiles/main.dir
 /home/felipe/Escritorio/ProgramaC/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/felipe/Escritorio/ProgramaC/cmake-build-debug/CMakeFiles/rebuild_cache.dir
