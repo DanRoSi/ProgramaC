@@ -2,18 +2,20 @@
 #include <string.h>
 
 int sub_str(const char *str, const char *sub, int init) ;
+int isPrefix(char* str,char* prefix);
 int main() {
     const char *str = "Hola, esto es un ejemplo.";
-    const char *sub = "ejemplo";
-    int init = 1;
+    const char *sub = "Hola";
+//    int init = 1;
+//
+//    int index = sub_str(str, sub, init);
+//    if (index != 0) {
+//        printf("La cadena '%s' fue encontrada en el índice %d.\n", sub, index);
+//    } else {
+//        printf("La cadena'%s' no fue encontrada.\n", sub);
+//    }
 
-    int index = sub_str(str, sub, init);
-    if (index != 0) {
-        printf("La cadena '%s' fue encontrada en el índice %d.\n", sub, index);
-    } else {
-        printf("La cadena'%s' no fue encontrada.\n", sub);
-    }
-
+    printf("la cadena %s, %s prefijo de la cadena %s",sub,isPrefix(str,sub)==0?"no es":"es",str);
     return 0;
 }
 int sub_str(const char *str, const char *sub, int init) {
@@ -46,4 +48,16 @@ int sub_str(const char *str, const char *sub, int init) {
         }
     }
     return 0;
+}
+int isPrefix(char* str,char* prefix){
+    if (strlen(str)< strlen(prefix)){
+        return -1;
+    }
+
+    for (int  i = 0; i < strlen(prefix); ++i) {
+        if(str[i]!=prefix[i]){
+            return 0;
+        }
+    }
+    return 1;
 }
