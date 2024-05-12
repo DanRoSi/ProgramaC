@@ -1,6 +1,5 @@
 CMakeFiles/TallerColaborativo.dir/Funciones.c.obj: \
  C:\Users\danie\Documents\Programacion\ III\Programacion\ III\TallerColaborativo\Funciones.c \
- C:\Users\danie\Documents\Programacion\ III\Programacion\ III\TallerColaborativo\funciones.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/string.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.1.1/bin/mingw/x86_64-w64-mingw32/include/corecrt.h \
