@@ -90,6 +90,7 @@ int main() {
 
     return 0;
 }
+
 int sub_str(const char *str, const char *sub, int init) {
     int len = strlen(str);
     int sublen = strlen(sub);
@@ -124,6 +125,16 @@ int sub_str(const char *str, const char *sub, int init) {
     }
     return 0;
 }
+/**
+ * punto 5 del taller
+ * @param str string a evaluar si contiene el prefijo
+ * @param prefix prefijo a evaluar
+ * entero que define si es prefijo de la siguiente manera:
+ * @return -1 si la longitud del prefijo es mayor a la del string
+ * @return 0 si no es prefijo
+ * @return 1 si es prefijo
+ *
+ */
 int isPrefix(char* str,char* prefix){
     if (strlen(str)< strlen(prefix)){
         return -1;
@@ -136,6 +147,11 @@ int isPrefix(char* str,char* prefix){
     }
     return 1;
 }
+/***
+ * punto nueve del taller
+ * @param str string a ordenar
+ * @return copia del string ordenada
+ */
 char* orderedString(char str[]) {
     int len = strlen(str);
     char* result = (char*)malloc(len + 1);
