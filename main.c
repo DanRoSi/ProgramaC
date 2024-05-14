@@ -70,8 +70,24 @@ int main() {
                     printf("Error: La cadena ingresada esta vacia.\n");
                     break;
                 }
-//    printf("la cadena %s, %s prefijo de la cadena %s",sub,isPrefix(str,sub)==0?"no es":"es",str);
-    printf("%s", orderedString(str));
+                resultado = eliminarCaracteresRepetidos(cadena);
+                printf("Cadena original: %s", cadena);
+                printf("Cadena sin caracteres repetidos: %s\n", resultado);
+                free(resultado);
+                break;
+            }
+
+            case 3:
+                printf("Saliendo del programa...\n");
+                break;
+
+            default:
+                printf("Opcion no valida. Por favor, seleccione una opcion valida.\n");
+                break;
+        }
+    } while (opcion != 3);
+
+
     return 0;
 }
 int sub_str(const char *str, const char *sub, int init) {
@@ -90,20 +106,7 @@ int sub_str(const char *str, const char *sub, int init) {
         return -3;
     }
 
-                resultado = eliminarCaracteresRepetidos(cadena);
-                printf("Cadena original: %s", cadena);
-                printf("Cadena sin caracteres repetidos: %s\n", resultado);
-                free(resultado);
-                break;
-            }
 
-            case 3:
-                printf("Saliendo del programa...\n");
-                break;
-
-            default:
-                printf("Opcion no valida. Por favor, seleccione una opcion valida.\n");
-                break;
     int i, j;
     for (i = init; i <= len - sublen; i++) {
         if (str[i] == sub[0]) {
@@ -117,7 +120,6 @@ int sub_str(const char *str, const char *sub, int init) {
             }
         }
 
-    } while (opcion != 3);
 
     }
     return 0;
