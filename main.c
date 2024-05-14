@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "funciones.h"
+
 
 void mostrarMenu() {
     printf("\n--- Menu ---\n");
-    printf("1. Rellenar cadena\n");
-    printf("2. Eliminar caracteres repetidos\n");
+    printf("1. Modificar caracter\n");
+    printf("2. Insertar texto\n");
     printf("3. Salir\n");
     printf("Ingrese la opcion deseada: ");
 }
 
 int main() {
     int opcion;
-    char cadena[100];
-    char caracter;
-    int inicio, fin, direccion;
+    char text[100], oldChar, newChar;
+    char baseText[100], insertText[100];
+    int position;
 
     do {
         mostrarMenu();
@@ -23,55 +23,34 @@ int main() {
         fflush(stdin);
 
         switch (opcion) {
-            case 1: {
-                char* resultado;
-                printf("\nIngrese una cadena de texto: ");
-                fgets(cadena, sizeof(cadena), stdin);
-
-                if (strlen(cadena) <= 1) {
-                    printf("Error: La cadena ingresada esta vacia.\n");
-                    break;
-                }
-
-                printf("Ingrese el caracter con el que desea rellenar: ");
-                scanf(" %c", &caracter);
+            case 1:
+                printf("Ingrese la cadena que desea modificar: ");
+                fgets(text, sizeof(text), stdin);
+                text[strcspn(text, "\n")] = '\0';
+                printf("Ingrese el caracter a reemplazar: ");
+                scanf(" %c", &oldChar);
+                fflush(stdin);
+                printf("Ingrese el caracter de reemplazo: ");
+                scanf(" %c", &newChar);
                 fflush(stdin);
 
-                printf("Ingrese la direccion para rellenar (0 para izquierda, 1 para derecha): ");
-                scanf("%d", &direccion);
-                fflush(stdin);
-
-                printf("Ingrese el inicio y fin para rellenar (ejemplo: 0 3): ");
-                scanf("%d %d", &inicio, &fin);
-                fflush(stdin);
-
-                if (inicio < 0 || fin >= strlen(cadena)) {
-                    printf("Error: Indices de inicio y fin fuera de rango.\n");
-                    break;
-                }
-
-                resultado = rellenarCadena(cadena, caracter, direccion, fin - inicio);
-                printf("Cadena rellenada: %s\n", resultado);
-                free(resultado);
+                changeChar(text, oldChar, newChar);
+                printf("Cadena modificada: %s\n", text);
                 break;
-            }
 
-            case 2: {
-                char* resultado;
-                printf("\nIngrese una cadena de texto para eliminar caracteres repetidos: ");
-                fgets(cadena, sizeof(cadena), stdin);
+            case 2:
+                printf("Ingrese la cadena base: ");
+                fgets(baseText, sizeof(baseText), stdin);
+                baseText[strcspn(baseText, "\n")] = '\0';
+                printf("Ingrese la cadena a insertar: ");
+                fgets(insertText, sizeof(insertText), stdin);
+                insertText[strcspn(insertText, "\n")] = '\0';
+                printf("Ingrese la posicion para insertar: ");
+                scanf("%d", &position);
 
-                if (strlen(cadena) <= 1) {
-                    printf("Error: La cadena ingresada esta vacia.\n");
-                    break;
-                }
-
-                resultado = eliminarCaracteresRepetidos(cadena);
-                printf("Cadena original: %s", cadena);
-                printf("Cadena sin caracteres repetidos: %s\n", resultado);
-                free(resultado);
+                insertText(baseText, insertText, position);
+                printf("Cadena con texto insertado: %s\n", baseText);
                 break;
-            }
 
             case 3:
                 printf("Saliendo del programa...\n");
@@ -79,7 +58,6 @@ int main() {
 
             default:
                 printf("Opcion no valida. Por favor, seleccione una opcion valida.\n");
-                break;
         }
 
     } while (opcion != 3);
