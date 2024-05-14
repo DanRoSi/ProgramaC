@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include "Funciones.h"
 #include <malloc.h>
@@ -7,10 +6,13 @@ int sub_str(const char *str, const char *sub, int init) ;
 int isPrefix(char* str,char* prefix);
 char* orderedString(char str[]);
 void mostrarMenu() {
-    printf("\n--- Menu ---\n");
+    printf("\n--- Menu ---\n"
+           "1.Revisar si es prefijo\n");
     printf("1. Rellenar cadena\n");
-    printf("2. Eliminar caracteres repetidos\n");
-    printf("3. Salir\n");
+    printf("2. Eliminar caracteres repetidos\n"
+           "5.revisar si es prefijo\n"
+           "9.ordenar una cadena alfabeticamente");
+    printf("0. Salir\n");
     printf("Ingrese la opcion deseada: ");
 }
 
