@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <malloc.h>
 
 int sub_str(const char *str, const char *sub, int init) ;
 int isPrefix(char* str,char* prefix);
+char* orderedString(char str[]);
 int main() {
-    const char *str = "Hola, esto es un ejemplo.";
+    const char *str = "puto";
     const char *sub = "Hola";
 //    int init = 1;
 //
@@ -15,7 +17,8 @@ int main() {
 //        printf("La cadena'%s' no fue encontrada.\n", sub);
 //    }
 
-    printf("la cadena %s, %s prefijo de la cadena %s",sub,isPrefix(str,sub)==0?"no es":"es",str);
+//    printf("la cadena %s, %s prefijo de la cadena %s",sub,isPrefix(str,sub)==0?"no es":"es",str);
+    printf("%s", orderedString(str));
     return 0;
 }
 int sub_str(const char *str, const char *sub, int init) {
@@ -60,4 +63,26 @@ int isPrefix(char* str,char* prefix){
         }
     }
     return 1;
+}
+char* orderedString(char str[]) {
+    int len = strlen(str);
+    char* result = (char*)malloc(len + 1);
+    if (result == NULL) {
+        return NULL;
+    }
+    strcpy(result, str);
+    char aux;
+    for (int i = 0; result[i]; ++i) {
+        for (int j = 0; result[j]; ++j) {
+            if (result[j] > result[i]) {
+                aux = result[j];
+                result[j] = result[i];
+                result[i] = aux;
+            }
+        }
+    }
+
+    result[len] = '\0';
+
+    return result;
 }

@@ -24,4 +24,4 @@ CMakeFiles/main.dir/main.c.o: /home/felipe/Escritorio/ProgramaC/main.c \
  /usr/include/x86_64-linux-gnu/bits/floatn-common.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
- /usr/include/strings.h
+ /usr/include/strings.h /usr/include/malloc.h

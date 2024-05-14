@@ -4,6 +4,7 @@
 CMakeFiles/main.dir/main.c.o: /home/felipe/Escritorio/ProgramaC/main.c \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/malloc.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/string.h \
@@ -51,6 +52,8 @@ CMakeFiles/main.dir/main.c.o: /home/felipe/Escritorio/ProgramaC/main.c \
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
 /usr/include/stdio.h:
 
 /home/felipe/Escritorio/ProgramaC/main.c:
@@ -59,21 +62,23 @@ CMakeFiles/main.dir/main.c.o: /home/felipe/Escritorio/ProgramaC/main.c \
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/usr/include/string.h:
-
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
 /usr/include/features.h:
 
 /usr/include/stdc-predef.h:
 
+/usr/include/malloc.h:
+
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/string.h:
 
 /usr/include/strings.h:
 
@@ -90,5 +95,3 @@ CMakeFiles/main.dir/main.c.o: /home/felipe/Escritorio/ProgramaC/main.c \
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
