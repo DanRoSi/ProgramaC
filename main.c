@@ -1,27 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-#include "Funciones.h"
+#include "Funciones.c"
 #include <malloc.h>
 int sub_str(const char *str, const char *sub, int init) ;
 int isPrefix(char* str,char* prefix);
 char* orderedString(char str[]);
 void mostrarMenu() {
-    printf("\n--- Menu ---\n"
-           "1.Buscar ocurrencia\n");
-    printf("2. Rellenar cadena\n");
-    printf("5.Revisar si es prefijo\n"
-            "6. Eliminar caracteres repetidos\n"
+    printf("\n--- Menu ---\n");
+    printf("1.buscar subcadena\n"
+            "2. Rellenar cadena\n");
+    printf("3. Diferencia entre dos cadenas de texto\n");
+    printf("4. Cambiar un caracter por otro en un texto\n"
+           "5.revisar si una cadena es prefijo\n");
+    printf("6. Eliminar caracteres repetidos\n");
+    printf("7. Obtener subcadena\n");
+    printf("8. Insertar una cadena dentro de otra en cierta posicion\n"
            "9.ordenar una cadena alfabeticamente\n");
     printf("0. Salir\n");
-    printf("\n--- Menu ---\n");
-    printf("1. Rellenar cadena\n");
-    printf("2. Eliminar caracteres repetidos\n");
-    printf("3. Diferencia entre dos cadenas de texto\n");
-    printf("4. Cambiar un caracter por otro en un texto");
-    printf("7. Obtener subcadena\n");
-    printf("8. Insertar una cadena dentro de otra en cierta posicion");
-    printf("9. Salir\n");
     printf("Ingrese la opcion deseada: ");
 }
 
@@ -93,7 +88,7 @@ int main() {
                 break;
             }
             case 5:
-                str= (char *) malloc(inicio + 1);;
+                str= (char *) malloc(inicio + 1);
                 substr= (char *) malloc(fin + 1);
                 pos= 0;
                 printf("ingrese la cadena de caracteres donde desea buscar si es prefijo: ");
@@ -130,30 +125,34 @@ int main() {
             case 3:
 
                 printf("Ingrese la primera cadena de texto: ");
+                char *primera;
                 fgets(primera, 100, stdin);
                 primera[strcspn(primera, "\n")] = '\0'; // Eliminar el salto de línea
 
                 printf("Ingrese la segunda cadena de texto: ");
+                char *segunda;
                 fgets(segunda, 100, stdin);
                 segunda[strcspn(segunda, "\n")] = '\0'; // Eliminar el salto de línea
 
-                resultado = diferenciaEntreTextos(primera, segunda);
+                char *resultado = diferenciaEntreTextos(primera, segunda);
                 printf("Diferencia entre las cadenas: %s\n", resultado);
                 free(resultado);
                 break;
             case 4:
                 char text[100];
                 printf("Ingrese la cadena que desea modificar \n");
-                scanf("%s",&text);
+                scanf("%s",text);
                 printf("Ingrese el caracter que sea reemplazar\n");
                 char old;
                 scanf(" %c",&old);
                 char new;
                 printf("Ingrese el caracter que reemplazara el anterior \n");
                 scanf(" %c",&new);
-                printf("La nueva cadena es: %s",changeChar(text,old,new),"\n");
+                printf("La nueva cadena es: %s \n",changeChar(text,old,new));
                 break;
             case 7:
+                int posicionInicial=0;
+                int posicionFinal=0;
                 printf("Ingrese la cadena de caracteres: ");
                 fgets(cadena, 100, stdin);
                 cadena[strcspn(cadena, "\n")] = '\0'; // Eliminar el salto de línea
@@ -180,12 +179,16 @@ int main() {
                 insert_text[strcspn(insert_text, "\n")] = '\0';
 
                 printf("Ingrese la ubicacion donde insertara la cadena:\n");
-                int pos = 0;
+                 pos = 0;
                 scanf("%i", &pos);
                 printf("La cadena final es: %s\n", insertText(base_text, insert_text, pos));
                 break;
+
             case 9:
-            case 9:
+                str= (char *) malloc(inicio + 1);
+                printf("ingrese la cadena de caracteres donde desea buscar: ");
+                scanf("%s",str);
+                printf("cadena ordenada: %s", orderedString(str));
                 break;
             case 0:
                 printf("Saliendo del programa...\n");
@@ -230,8 +233,6 @@ int sub_str(const char *str, const char *sub, int init) {
                 return i;
             }
         }
-
-    } while (opcion != 3);
 
     }
     return 0;
