@@ -7,10 +7,10 @@ int isPrefix(char* str,char* prefix);
 char* orderedString(char str[]);
 void mostrarMenu() {
     printf("\n--- Menu ---\n"
-           "1.Revisar si es prefijo\n");
+           "1.Buscar ocurrencia\n");
     printf("1. Rellenar cadena\n");
     printf("2. Eliminar caracteres repetidos\n"
-           "5.revisar si es prefijo\n"
+           "5.Revisar si es prefijo\n"
            "9.ordenar una cadena alfabeticamente");
     printf("0. Salir\n");
     printf("Ingrese la opcion deseada: ");
@@ -27,10 +27,23 @@ int main() {
     do {
         mostrarMenu();
         scanf("%d", &opcion);
-        fflush(stdin);
 
         switch (opcion) {
-            case 1: {
+            case 1:
+                char* str=(char *) malloc(inicio+1);
+                char* substr=(char *) malloc(fin+1);
+                int pos = 0;
+                printf("ingrese la cadena de caracteres donde desea buscar: ");
+                scanf("%s",str);
+                printf("%s",str);
+                printf("ingrese la subcadena de caracteres que desea buscar");
+                scanf("%s",substr);
+                printf("ingrese la posicion de la cadena donde desea empezar la busqueda");
+                scanf("%d",&pos);
+                pos= sub_str(str,substr,pos);
+                printf("%d", pos);
+                break;
+            case 2: {
                 char* resultado;
                 printf("\nIngrese una cadena de texto: ");
                 fgets(cadena, sizeof(cadena), stdin);
@@ -63,7 +76,7 @@ int main() {
                 break;
             }
 
-            case 2: {
+            case 6: {
                 char* resultado;
                 printf("\nIngrese una cadena de texto para eliminar caracteres repetidos: ");
                 fgets(cadena, sizeof(cadena), stdin);
@@ -79,7 +92,7 @@ int main() {
                 break;
             }
 
-            case 3:
+            case 0:
                 printf("Saliendo del programa...\n");
                 break;
 
@@ -87,7 +100,7 @@ int main() {
                 printf("Opcion no valida. Por favor, seleccione una opcion valida.\n");
                 break;
         }
-    } while (opcion != 3);
+    } while (opcion != 0);
 
 
     return 0;
@@ -101,7 +114,7 @@ int sub_str(const char *str, const char *sub, int init) {
         return -1;
     }
     //error code for an index bigger than the string's length
-    if (init >= strlen){
+    if (init >= len){
         return -2;
     }
     //error code in case the sub string is bigger than the string's length
