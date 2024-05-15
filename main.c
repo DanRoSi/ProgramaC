@@ -5,13 +5,16 @@
 
 void mostrarMenu() {
     printf("\n--- Menu ---\n");
-    printf("1. Rellenar cadena\n");
-    printf("2. Eliminar caracteres repetidos\n");
+    printf("1. Busca ocurrencia de una subcadena a otra");
+    printf("2. Rellenar cadena\n");
     printf("3. Diferencia entre dos cadenas de texto\n");
     printf("4. Cambiar un caracter por otro en un texto");
+    printf("5. Funcion que valida si una cadena inicia con otra\n");
+    printf("6. Funcion que retorna una cadena sin caracteres repetidos\n");
     printf("7. Obtener subcadena\n");
     printf("8. Insertar una cadena dentro de otra en cierta posicion");
-    printf("9. Salir\n");
+    printf("9. Ordena una cadena ignorando Mayusculas/Minusculas");
+    printf("10. Salir\n");
     printf("Ingrese la opcion deseada: ");
 }
 
@@ -27,7 +30,11 @@ int main() {
         fflush(stdin);
 
         switch (opcion) {
-            case 1: {
+
+            case 1:
+                break;
+
+            case 2: {
                 char* resultado;
                 printf("\nIngrese una cadena de texto: ");
                 fgets(cadena, sizeof(cadena), stdin);
@@ -59,23 +66,6 @@ int main() {
                 free(resultado);
                 break;
             }
-
-            case 2: {
-                char* resultado;
-                printf("\nIngrese una cadena de texto para eliminar caracteres repetidos: ");
-                fgets(cadena, sizeof(cadena), stdin);
-
-                if (strlen(cadena) <= 1) {
-                    printf("Error: La cadena ingresada esta vacia.\n");
-                    break;
-                }
-
-                resultado = eliminarCaracteresRepetidos(cadena);
-                printf("Cadena original: %s", cadena);
-                printf("Cadena sin caracteres repetidos: %s\n", resultado);
-                free(resultado);
-                break;
-            }
             case 3:
 
                 printf("Ingrese la primera cadena de texto: ");
@@ -102,6 +92,29 @@ int main() {
                 scanf(" %c",&new);
                 printf("La nueva cadena es: %s",changeChar(text,old,new),"\n");
                 break;
+
+            case 5:
+                break;
+
+            case 6:{
+
+                char* resultado;
+                printf("\nIngrese una cadena de texto para eliminar caracteres repetidos: ");
+                fgets(cadena, sizeof(cadena), stdin);
+
+                if (strlen(cadena) <= 1) {
+                    printf("Error: La cadena ingresada esta vacia.\n");
+                    break;
+                }
+
+                resultado = eliminarCaracteresRepetidos(cadena);
+                printf("Cadena original: %s", cadena);
+                printf("Cadena sin caracteres repetidos: %s\n", resultado);
+                free(resultado);
+                break;
+            }
+
+
             case 7:
                 printf("Ingrese la cadena de caracteres: ");
                 fgets(cadena, 100, stdin);
@@ -133,7 +146,12 @@ int main() {
                 scanf("%i", &pos);
                 printf("La cadena final es: %s\n", insertText(base_text, insert_text, pos));
                 break;
+
             case 9:
+                break;
+
+
+            case 10:
                 printf("Saliendo del programa...\n");
                 break;
 
