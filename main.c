@@ -40,7 +40,6 @@ int main() {
                 int pos = 0;
                 printf("ingrese la cadena de caracteres donde desea buscar: ");
                 scanf("%s",str);
-                printf("%s",str);
                 printf("ingrese la subcadena de caracteres que desea buscar");
                 scanf("%s",substr);
                 printf("ingrese la posicion de la cadena donde desea empezar la busqueda");
@@ -54,6 +53,7 @@ int main() {
                 }
                 if(pos==-3)
                     printf("substring length is bigger than the string length");
+                printf("la subcadena inicia en: %d", pos);
                 break;
             case 2: {
                 char* resultado;
