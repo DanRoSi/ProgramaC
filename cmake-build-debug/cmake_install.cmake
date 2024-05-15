@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/TallerColaborativo")
+=======
+# Install script for directory: C:/Users/SERGIO/CLionProjects/untitled2
+
+# Set the install prefix
+if(NOT DEFINED CMAKE_INSTALL_PREFIX)
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/untitled2")
+>>>>>>> FuctionThreeAndSeven
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +42,11 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
+<<<<<<< HEAD
   set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2024.1.1/bin/mingw/bin/objdump.exe")
+=======
+  set(CMAKE_OBJDUMP "C:/Program Files/JetBrains/CLion 2024.1/bin/mingw/bin/objdump.exe")
+>>>>>>> FuctionThreeAndSeven
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +57,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/SERGIO/CLionProjects/untitled2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> FuctionThreeAndSeven
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

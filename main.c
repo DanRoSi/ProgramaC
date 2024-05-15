@@ -7,7 +7,10 @@ void mostrarMenu() {
     printf("\n--- Menu ---\n");
     printf("1. Rellenar cadena\n");
     printf("2. Eliminar caracteres repetidos\n");
-    printf("3. Salir\n");
+    printf("3. Diferencia entre dos cadenas de texto\n");
+    printf("7. Obtener subcadena\n");
+
+    printf("9. Salir\n");
     printf("Ingrese la opcion deseada: ");
 }
 
@@ -72,8 +75,42 @@ int main() {
                 free(resultado);
                 break;
             }
-
             case 3:
+                printf("Ingrese la primera cadena de texto: ");
+                fgets(primera, 100, stdin);
+                primera[strcspn(primera, "\n")] = '\0'; // Eliminar el salto de línea
+
+                printf("Ingrese la segunda cadena de texto: ");
+                fgets(segunda, 100, stdin);
+                segunda[strcspn(segunda, "\n")] = '\0'; // Eliminar el salto de línea
+
+                resultado = diferenciaEntreTextos(primera, segunda);
+                printf("Diferencia entre las cadenas: %s\n", resultado);
+                free(resultado);
+                break;
+            case 7:
+                printf("Ingrese la cadena de caracteres: ");
+                fgets(cadena, 100, stdin);
+                cadena[strcspn(cadena, "\n")] = '\0'; // Eliminar el salto de línea
+
+                printf("Ingrese la posicion inicial: ");
+                scanf("%d", &posicionInicial);
+
+                printf("Ingrese la posicion final: ");
+                scanf("%d", &posicionFinal);
+
+                resultado = obtenerSubcadena(cadena, posicionInicial, posicionFinal);
+                printf("Subcadena: %s\n", resultado);
+                free(resultado);
+                break;
+            case 3:
+                printf("Saliendo...\n");
+                break;
+            default:
+                printf("Opcion inválida. Por favor, intente de nuevo.\n");
+                break;
+
+            case 9:
                 printf("Saliendo del programa...\n");
                 break;
 
@@ -86,3 +123,4 @@ int main() {
 
     return 0;
 }
+
