@@ -1,8 +1,7 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <stdlib.h>
 #include <string.h>
 
+//Daniel methods rellenarCadena (2)
 char* rellenarCadena(char* cadena, char caracter, int direccion, int numCaracteres) {
     int longitud = strlen(cadena);
     char* resultado = malloc(longitud + numCaracteres + 1);
@@ -22,6 +21,7 @@ char* rellenarCadena(char* cadena, char caracter, int direccion, int numCaracter
 
     return resultado;
 }
+//Daniel methods EliminarCaracteresRepetidos (6)
 char* eliminarCaracteresRepetidos(const char* cadena) {
     int caracteres[256] = {0};
     int len = strlen(cadena);
@@ -40,12 +40,10 @@ char* eliminarCaracteresRepetidos(const char* cadena) {
 
     return nuevaCadena;
     }
-
+//Sergio methods diferenciaEntreTextos (7)
 char* diferenciaEntreTextos(char* primera, char* segunda) {
-    // array para almacenar la frecuencia de los caracteres
     int frecuencia[256] = {0};
 
-    // Contar la frecuencia de los caracteres en ambas cadenas
     for (int i = 0; primera[i]; i++) {
         frecuencia[primera[i]]++;
     }
@@ -53,7 +51,6 @@ char* diferenciaEntreTextos(char* primera, char* segunda) {
         frecuencia[segunda[i]]++;
     }
 
-    // Contar el número de caracteres con frecuencia 1
     int longitud = 0;
     for (int i = 0; i < 256; i++) {
         if (frecuencia[i] == 1) {
@@ -61,7 +58,6 @@ char* diferenciaEntreTextos(char* primera, char* segunda) {
         }
     }
 
-    // Asignar memoria para la nueva cadena
     char* resultado = (char*)malloc((longitud + 1) * sizeof(char));
     int j = 0;
     for (int i = 0; i < 256; i++) {
@@ -74,19 +70,16 @@ char* diferenciaEntreTextos(char* primera, char* segunda) {
     return resultado;
 }
 
-
+//Sergio methods obtenerSubcadena (3)
 char* obtenerSubcadena(char* cadena, int posicionInicial, int posicionFinal) {
     int longitud = strlen(cadena);
 
-    // Si la posición final es cero, retornamos hasta el final de la cadena
     if (posicionFinal == 0) {
         posicionFinal = longitud;
     }
 
-    // Asignar memoria para la subcadena
     int subcadenaLongitud = posicionFinal - posicionInicial;
 
-    // Si la posición final es menor que la posición inicial, retornamos en forma invertida
     if (posicionFinal < posicionInicial) {
         subcadenaLongitud = posicionInicial - posicionFinal;
         char* subcadena = (char*)malloc((subcadenaLongitud + 1) * sizeof(char));
@@ -97,7 +90,6 @@ char* obtenerSubcadena(char* cadena, int posicionInicial, int posicionFinal) {
         subcadena[j] = '\0';
         return subcadena;
     }
-        // subcadena normal
     else {
         if (posicionInicial < 0) {
             posicionInicial = 0;
@@ -114,6 +106,7 @@ char* obtenerSubcadena(char* cadena, int posicionInicial, int posicionFinal) {
 }
 
 
+//Jonathan methods changeChar (4)
 char * changeChar(char text[], char old, char new) {
 
     for (int i =0;i<strlen(text);i++) {
@@ -126,6 +119,7 @@ char * changeChar(char text[], char old, char new) {
 
 }
 
+//Jonathan methods changeChar (8)
 char * insertText(char base_text[], char insert_text[], int pos) {
     int i;
 
