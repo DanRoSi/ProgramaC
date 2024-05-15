@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-
+#include "Funciones.h"
 
 void mostrarMenu() {
     printf("\n--- Menu ---\n");
@@ -48,7 +47,7 @@ int main() {
                 printf("Ingrese la posicion para insertar: ");
                 scanf("%d", &position);
 
-                insertText(baseText, insertText, position);
+                void insertText(char baseText[], char insertText[], int position);
                 printf("Cadena con texto insertado: %s\n", baseText);
                 break;
 

@@ -2,8 +2,8 @@
 // Created by danie on 4/05/2024.
 //
 
-#include <stdio.h>
 #include <string.h>
+#include "Funciones.h"
 
 void changeChar(char text[], char oldChar, char newChar) {
     for (int i = 0; i < strlen(text); i++) {
@@ -14,13 +14,14 @@ void changeChar(char text[], char oldChar, char newChar) {
 }
 
 void insertText(char baseText[], char insertText[], int position) {
-    int i, j;
+    int i;
 
-    for (i = strlen(baseText) + strlen(insertText) - 1; i >= position + strlen(insertText); i--) {
-        baseText[i] = baseText[i - strlen(insertText)];
+    for (i = strlen(baseText); i >= position; --i) {
+        baseText[i + strlen(insertText)] = baseText[i];
     }
 
-    for (j = 0; j < strlen(insertText); j++) {
-        baseText[position + j] = insertText[j];
+    for (i = 0; i < strlen(insertText); ++i) {
+        baseText[position + i] = insertText[i];
     }
 }
+
