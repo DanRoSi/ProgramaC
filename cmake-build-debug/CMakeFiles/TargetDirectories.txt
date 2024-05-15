@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/cmake-build-debug/CMakeFiles/TallerColaborativo.dir
+C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+C:/Users/SERGIO/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/untitled2.dir
+C:/Users/SERGIO/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/SERGIO/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> FuctionThreeAndSeven
