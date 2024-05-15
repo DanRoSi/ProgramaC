@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdlib.h>
+#include <string.h>
 
 char* rellenarCadena(char* cadena, char caracter, int direccion, int numCaracteres) {
     int longitud = strlen(cadena);
@@ -111,3 +112,32 @@ char* obtenerSubcadena(char* cadena, int posicionInicial, int posicionFinal) {
         return subcadena;
     }
 }
+
+
+char * changeChar(char text[], char old, char new) {
+
+    for (int i =0;i<strlen(text);i++) {
+        if (text[i]==old) {
+            text[i]=new;
+        }
+    }
+    char *dir_text= text;
+    return dir_text;
+
+}
+
+char * insertText(char base_text[], char insert_text[], int pos) {
+    int i;
+
+    for (i = strlen(base_text); i >= pos; --i) {
+        base_text[i+strlen(insert_text)]=base_text[i];
+
+    }
+
+    for ( i = 0; i < strlen(insert_text); ++i) {
+        base_text[pos+i]=insert_text[i];
+    }
+    char *dir_base_text=base_text;
+    return dir_base_text;
+}
+

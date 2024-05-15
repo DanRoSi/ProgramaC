@@ -8,8 +8,9 @@ void mostrarMenu() {
     printf("1. Rellenar cadena\n");
     printf("2. Eliminar caracteres repetidos\n");
     printf("3. Diferencia entre dos cadenas de texto\n");
+    printf("4. Cambiar un caracter por otro en un texto");
     printf("7. Obtener subcadena\n");
-
+    printf("8. Insertar una cadena dentro de otra en cierta posicion");
     printf("9. Salir\n");
     printf("Ingrese la opcion deseada: ");
 }
@@ -76,6 +77,7 @@ int main() {
                 break;
             }
             case 3:
+
                 printf("Ingrese la primera cadena de texto: ");
                 fgets(primera, 100, stdin);
                 primera[strcspn(primera, "\n")] = '\0'; // Eliminar el salto de línea
@@ -87,6 +89,18 @@ int main() {
                 resultado = diferenciaEntreTextos(primera, segunda);
                 printf("Diferencia entre las cadenas: %s\n", resultado);
                 free(resultado);
+                break;
+            case 4:
+                char text[100];
+                printf("Ingrese la cadena que desea modificar \n");
+                scanf("%s",&text);
+                printf("Ingrese el caracter que sea reemplazar\n");
+                char old;
+                scanf(" %c",&old);
+                char new;
+                printf("Ingrese el caracter que reemplazara el anterior \n");
+                scanf(" %c",&new);
+                printf("La nueva cadena es: %s",changeChar(text,old,new),"\n");
                 break;
             case 7:
                 printf("Ingrese la cadena de caracteres: ");
@@ -103,13 +117,22 @@ int main() {
                 printf("Subcadena: %s\n", resultado);
                 free(resultado);
                 break;
-            case 3:
-                printf("Saliendo...\n");
-                break;
-            default:
-                printf("Opcion inválida. Por favor, intente de nuevo.\n");
-                break;
+            case 8:
+                printf("Ingrese la cadena base:\n");
+                char base_text[100];
+                fgets(base_text, sizeof(base_text), stdin);
+                base_text[strcspn(base_text, "\n")] = '\0';
 
+                printf("Ingrese la cadena para insertar:\n");
+                char insert_text[100];
+                fgets(insert_text, sizeof(insert_text), stdin);
+                insert_text[strcspn(insert_text, "\n")] = '\0';
+
+                printf("Ingrese la ubicacion donde insertara la cadena:\n");
+                int pos = 0;
+                scanf("%i", &pos);
+                printf("La cadena final es: %s\n", insertText(base_text, insert_text, pos));
+                break;
             case 9:
                 printf("Saliendo del programa...\n");
                 break;
