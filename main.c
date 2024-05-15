@@ -8,10 +8,10 @@ char* orderedString(char str[]);
 void mostrarMenu() {
     printf("\n--- Menu ---\n"
            "1.Buscar ocurrencia\n");
-    printf("1. Rellenar cadena\n");
-    printf("2. Eliminar caracteres repetidos\n"
-           "5.Revisar si es prefijo\n"
-           "9.ordenar una cadena alfabeticamente");
+    printf("2. Rellenar cadena\n");
+    printf("5.Revisar si es prefijo\n"
+            "6. Eliminar caracteres repetidos\n"
+           "9.ordenar una cadena alfabeticamente\n");
     printf("0. Salir\n");
     printf("Ingrese la opcion deseada: ");
 }
@@ -23,15 +23,16 @@ int main() {
     char cadena[100];
     char caracter;
     int inicio, fin, direccion;
-
+    char* str;
+    char* substr;
     do {
         mostrarMenu();
         scanf("%d", &opcion);
 
         switch (opcion) {
             case 1:
-                char* str=(char *) malloc(inicio+1);
-                char* substr=(char *) malloc(fin+1);
+                str=(char *) malloc(inicio+1);
+                substr=(char *) malloc(fin+1);
                 int pos = 0;
                 printf("ingrese la cadena de caracteres donde desea buscar: ");
                 scanf("%s",str);
@@ -41,7 +42,14 @@ int main() {
                 printf("ingrese la posicion de la cadena donde desea empezar la busqueda");
                 scanf("%d",&pos);
                 pos= sub_str(str,substr,pos);
-                printf("%d", pos);
+                if (pos==-1){
+                    printf("negative index");
+                }
+                if(pos==-2){
+                    printf("the index is bigger than the string length");
+                }
+                if(pos==-3)
+                    printf("substring length is bigger than the string length");
                 break;
             case 2: {
                 char* resultado;
@@ -75,7 +83,26 @@ int main() {
                 free(resultado);
                 break;
             }
-
+            case 5:
+                str= (char *) malloc(inicio + 1);;
+                substr= (char *) malloc(fin + 1);
+                pos= 0;
+                printf("ingrese la cadena de caracteres donde desea buscar si es prefijo: ");
+                scanf("%s",str);
+                printf("%s",str);
+                printf("ingrese la subcadena de caracteres que desea evaluar");
+                scanf("%s",substr);
+                pos= isPrefix(str,substr);
+                if (pos==-1){
+                    printf("the prefix is bigger than the string");
+                }
+                if (pos==0){
+                    printf("is not a prefix");
+                }
+                if (pos==1){
+                    printf("is a prefix");
+                }
+                break;
             case 6: {
                 char* resultado;
                 printf("\nIngrese una cadena de texto para eliminar caracteres repetidos: ");
@@ -91,7 +118,8 @@ int main() {
                 free(resultado);
                 break;
             }
-
+            case 9:
+                break;
             case 0:
                 printf("Saliendo del programa...\n");
                 break;
