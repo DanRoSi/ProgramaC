@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/danie/Documents/Programacion III/Programacion III/Taller 2.0
+# Install script for directory: C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Taller_2_0")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/TallerColaborativo")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/danie/Documents/Programacion III/Programacion III/Taller 2.0/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/danie/Documents/Programacion III/Programacion III/TallerColaborativo/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

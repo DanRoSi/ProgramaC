@@ -17,7 +17,7 @@ int main() {
         printf("\n\nMenu de funciones:\n");
         printf("1. Buscar primera ocurrencia de subcadena\n");
         printf("2. Verificar si una cadena inicia con otra\n");
-        printf("3. Ordenar cadena ignorando mayúsculas y minusculas\n");
+        printf("3. Ordenar cadena ignorando mayusculas y minusculas\n");
         printf("4. Rellenar cadena con caracteres\n");
         printf("5. Eliminar caracteres repetidos\n");
         printf("6. Diferencia entre dos textos\n");
@@ -37,15 +37,15 @@ int main() {
                 scanf("%c", &opcion);
                 fgets(subcadena, sizeof(subcadena), stdin);
                 subcadena[strcspn(subcadena, "\n")] = '\0';
-                printf("Ingrese la posición de inicio: ");
+                printf("Ingrese la posicion de inicio: ");
                 scanf("%d", &posicionInicio);
 
                 fflush(stdin);
                 int resultado = buscarPrimeraOcurrenciaCadena(cadena, subcadena, posicionInicio);
                 if (resultado == -1) {
-                    printf("No se encontró la subcadena en la posición indicada.\n");
+                    printf("No se encontro la subcadena en la posicion indicada.\n");
                 } else {
-                    printf("La subcadena se encontró en la posición %d.\n", resultado);
+                    printf("La subcadena se encontro en la posicion %d.\n", resultado);
                 }
                 break;
             }
@@ -97,7 +97,7 @@ int main() {
 
                 printf("Ingrese el caracter de relleno: ");
                 scanf(" %c", &caracter);
-                printf("Ingrese la dirección (0 para izquierda, 1 para derecha): ");
+                printf("Ingrese la direccion (0 para izquierda, 1 para derecha): ");
                 scanf("%d", &direccion);
                 printf("Ingrese la cantidad de caracteres: ");
                 scanf("%d", &numCaracteres);
@@ -132,7 +132,7 @@ int main() {
                 strtok(texto2, "\n"); // Eliminar el salto de línea
 
                 // Calcular y mostrar los caracteres únicos en el primer texto
-                printf("Caracteres únicos en el primer texto:\n");
+                printf("Caracteres unicos en el primer texto:\n");
                 for (int i = 0; texto1[i] != '\0'; i++) {
                     int j;
                     for (j = 0; texto1[j] != '\0'; j++) {
@@ -147,7 +147,7 @@ int main() {
                 printf("\n");
 
                 // Calcular y mostrar los caracteres únicos en el segundo texto
-                printf("Caracteres únicos en el segundo texto:\n");
+                printf("Caracteres unicos en el segundo texto:\n");
                 for (int i = 0; texto2[i] != '\0'; i++) {
                     int j;
                     for (j = 0; texto2[j] != '\0'; j++) {
@@ -168,9 +168,9 @@ int main() {
                 int posicionInicial;
                 int posicionFinal;
 
-                printf("Ingrese la posición inicial: ");
+                printf("Ingrese la posicion inicial: ");
                 scanf("%d", &posicionInicial);
-                printf("Ingrese la posición final: ");
+                printf("Ingrese la posicion final: ");
                 scanf("%d", &posicionFinal);
 
                 char *resultado = obtenerSubcadena(cadena, posicionInicial, posicionFinal);
@@ -246,7 +246,7 @@ int main() {
                 printf("Saliendo del programa...\n");
                 break;
             default:
-                printf("Opción invalida.\n");
+                printf("Opcion invalida.\n");
         }
         fflush(stdin);
     } while (opcion != 0);
