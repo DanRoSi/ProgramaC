@@ -186,7 +186,7 @@ int main() {
 
             case 9:
                 str= (char *) malloc(inicio + 1);
-                printf("ingrese la cadena de caracteres que desea ordenar: ");
+                printf("ingrese la cadena de caracteres que desea ordenar   : ");
                 scanf("%s",str);
                 printf("cadena ordenada: %s", orderedString(str));
                 break;

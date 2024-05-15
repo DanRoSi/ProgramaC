@@ -1,4 +1,4 @@
 # ProgramaC
 
-Plataforma: Windows
+Plataforma: Windows, Linux
 Editor: CLion
